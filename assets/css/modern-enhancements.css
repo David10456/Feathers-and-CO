@@ -1,0 +1,471 @@
+/**
+ * Modern Enhancements for Feathers and CO
+ * Adds dynamic animations, smooth interactions, and premium visual effects
+ */
+
+/* ============================================
+   1. SCROLL PROGRESS BAR
+   ============================================ */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-color), var(--heading-color));
+  z-index: 9999;
+  transition: width 0.1s ease-out;
+  box-shadow: 0 0 10px rgba(210, 163, 74, 0.5);
+}
+
+/* ============================================
+   2. LOADING SCREEN
+   ============================================ */
+.page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--background-color);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.page-loader.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-content {
+  text-align: center;
+}
+
+.loader-logo {
+  font-family: var(--heading-font);
+  font-size: 48px;
+  color: var(--heading-color);
+  margin-bottom: 20px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.loader-bar {
+  width: 200px;
+  height: 2px;
+  background: var(--line-color);
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.loader-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--accent-color);
+  animation: loading 1.5s ease-in-out infinite;
+}
+
+@keyframes loading {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(0.98); }
+}
+
+/* ============================================
+   3. SMOOTH REVEAL ANIMATIONS
+   ============================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-scale.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Staggered animation delays */
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+
+/* ============================================
+   4. PARALLAX HERO EFFECT
+   ============================================ */
+.hero-parallax {
+  transform: translateY(0);
+  transition: transform 0.1s linear;
+}
+
+.hero-content-parallax {
+  transform: translateY(0);
+  transition: transform 0.1s linear;
+}
+
+/* ============================================
+   5. MAGNETIC BUTTONS
+   ============================================ */
+.magnetic-btn {
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.magnetic-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(210, 163, 74, 0.1);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+  z-index: -1;
+}
+
+.magnetic-btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* ============================================
+   6. ANIMATED UNDERLINES
+   ============================================ */
+.animated-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-color);
+  transition: width 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-underline:hover::after {
+  width: 100%;
+}
+
+/* ============================================
+   7. GLASSMORPHISM CARDS
+   ============================================ */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   8. GRADIENT TEXT EFFECTS
+   ============================================ */
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent-color), var(--heading-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   9. TILT EFFECT ON CARDS
+   ============================================ */
+.tilt-card {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.tilt-card-inner {
+  transform: translateZ(20px);
+}
+
+/* ============================================
+   10. ANIMATED COUNTERS
+   ============================================ */
+.counter {
+  display: inline-block;
+  font-family: var(--heading-font);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+/* ============================================
+   11. IMAGE ZOOM ON SCROLL
+   ============================================ */
+.zoom-on-scroll {
+  overflow: hidden;
+}
+
+.zoom-on-scroll img {
+  transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.zoom-on-scroll.active img {
+  transform: scale(1.1);
+}
+
+/* ============================================
+   12. SMOOTH HOVER EFFECTS
+   ============================================ */
+.hover-lift {
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1), 
+              box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.hover-glow {
+  transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(210, 163, 74, 0.3);
+}
+
+/* ============================================
+   13. TEXT REVEAL ANIMATION
+   ============================================ */
+.text-reveal {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.text-reveal span {
+  display: inline-block;
+  transform: translateY(100%);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.text-reveal.active span {
+  transform: translateY(0);
+}
+
+/* ============================================
+   14. FLOATING ELEMENTS
+   ============================================ */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.float-delay-1 { animation-delay: 0.5s; }
+.float-delay-2 { animation-delay: 1s; }
+.float-delay-3 { animation-delay: 1.5s; }
+
+/* ============================================
+   15. CURSOR FOLLOWER (Desktop Only)
+   ============================================ */
+.cursor-follower {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transition: transform 0.2s ease, width 0.3s ease, height 0.3s ease;
+  mix-blend-mode: difference;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .cursor-follower {
+    display: block;
+  }
+}
+
+.cursor-follower.hover {
+  width: 60px;
+  height: 60px;
+  background: rgba(210, 163, 74, 0.1);
+}
+
+/* ============================================
+   16. ENHANCED BUTTON STATES
+   ============================================ */
+.btn-modern {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn-modern::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn-modern:hover::before {
+  width: 400px;
+  height: 400px;
+}
+
+.btn-modern:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   17. ANIMATED BACKGROUND PATTERNS
+   ============================================ */
+.pattern-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.pattern-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, var(--line-color) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.3;
+  animation: patternMove 20s linear infinite;
+}
+
+@keyframes patternMove {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
+}
+
+/* ============================================
+   18. SMOOTH SCROLL BEHAVIOR
+   ============================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================
+   19. ENHANCED IMAGE TREATMENTS
+   ============================================ */
+.image-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(27, 48, 35, 0.3), rgba(210, 163, 74, 0.2));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.image-overlay:hover::after {
+  opacity: 1;
+}
+
+/* ============================================
+   20. RESPONSIVE TYPOGRAPHY
+   ============================================ */
+@media (max-width: 768px) {
+  .hero h1, .hero h2 {
+    font-size: clamp(32px, 8vw, 48px) !important;
+  }
+  
+  .section-title p {
+    font-size: clamp(28px, 6vw, 42px) !important;
+  }
+  
+  .counter {
+    font-size: 36px;
+  }
+}
+
+/* ============================================
+   21. DARK MODE SUPPORT (Optional)
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1a1a1a;
+    --default-color: #e0e0e0;
+    --heading-color: #ffffff;
+    --surface-color: #2a2a2a;
+  }
+}
+
+/* ============================================
+   22. REDUCED MOTION SUPPORT
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

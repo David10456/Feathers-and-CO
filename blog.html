@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Blog</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Field Notes | Feathers and CO</title>
+  <meta name="description" content="Read our latest articles on sustainable poultry farming, feed production, biosecurity, and agricultural innovation at Feathers and CO in Cameroon.">
+  <meta name="keywords" content="poultry farming blog, sustainable agriculture, Feathers and CO, Cameroon, egg production, biosecurity, farmer training">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Marcellus&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +26,9 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!-- Modern Enhancements -->
+  <link href="assets/css/modern-enhancements.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: AgriCulture
@@ -42,39 +45,24 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="AgriCulture">
-        <!-- <h1 class="sitename">AgriCulture</h1>  -->
+        <img src="assets/img/logo.png" alt="Feathers and CO">
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Our Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html" class="active">Stories</a></li>
           <li><a href="testimonials.html">Testimonials</a></li>
-          <li><a href="blog.html" class="active">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+      <a href="contact.html" class="btn-cta magnetic-btn d-none d-lg-flex">
+        Talk to the farm <i class="bi bi-arrow-up-right"></i>
+      </a>
 
     </div>
   </header>
@@ -84,225 +72,232 @@
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
       <div class="container position-relative">
-        <h1>Blog</h1>
-        <p>Documentations on Farm Practices</p>
-        <nav class="breadcrumbs">
+        <span class="eyebrow" style="color: var(--contrast-color); opacity: 0.8;">The Notebook</span>
+        <h1 style="color: var(--contrast-color);">What we're learning on the farm.</h1>
+        <p style="color: rgba(244, 239, 228, 0.8); max-width: 600px; margin: 0 auto;">Documentations on our sustainable farming practices, practical tips, and agricultural innovations.</p>
+        <nav class="breadcrumbs" style="margin-top: 2rem;">
           <ol>
-           <!-- <li><a href="index.html">Home</a></li>
-            <li class="current">Blog</li>  -->
+            <li><a href="index.html" style="color: var(--contrast-color);">Home</a></li>
+            <li class="current" style="color: var(--accent-color);">Field Notes</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Blog Posts 2 Section -->
-    <section id="blog-posts-2" class="blog-posts-2 section">
-
+    <!-- Blog Filter & Search Section -->
+    <section class="section" style="padding-top: 40px; padding-bottom: 0;">
       <div class="container">
-        <div class="row gy-4">
+        <div class="row justify-content-between align-items-center mb-5 reveal">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <div class="search-widget" style="max-width: 400px;">
+              <form action="" method="post" role="form">
+                <input type="text" name="q" placeholder="Search the notes...">
+                <button type="submit"><i class="bi bi-search"></i></button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="d-inline-flex gap-2 flex-wrap">
+              <button class="btn btn-sm btn-outline-secondary active">All</button>
+              <button class="btn btn-sm btn-outline-secondary">Nutrition</button>
+              <button class="btn btn-sm btn-outline-secondary">Sustainability</button>
+              <button class="btn btn-sm btn-outline-secondary">Technology</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="col-lg-4">
-            <article class="position-relative h-100">
+    <!-- Blog Posts Section -->
+    <section id="blog-posts-2" class="blog-posts-2 section" style="padding-top: 0;">
+      <div class="container">
+        <div class="row gy-5">
 
+          <!-- Post 1: Egg Production -->
+          <div class="col-lg-4 col-md-6 reveal reveal-delay-1">
+            <article class="position-relative h-100 hover-lift">
               <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/blog/blog-5.jpg" class="img-fluid" alt="Egg Production">
+                <span class="post-date">14 Aug, 2026</span>
               </div>
-
-              <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>15</span>July, 2026</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Marketer</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Poultry Farming</span>
-                </div>
-              </div>
-
               <div class="post-content d-flex flex-column">
+                <div class="meta d-flex align-items-center mb-2">
+                  <i class="bi bi-folder2 me-2" style="color: var(--accent-color);"></i>
+                  <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted);">Egg Production</span>
+                </div>
+                <h3 class="post-title">Egg Production & Collection Management</h3>
+                <p style="font-size: 15px; color: var(--muted); flex-grow: 1;">Discover our comprehensive egg production and collection management practices, from layer care to quality grading.</p>
+                <a href="blog-eggs.html" class="readmore stretched-link"><span>Read Note</span><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
 
+          <!-- Post 2: Maize Cultivation -->
+          <div class="col-lg-4 col-md-6 reveal reveal-delay-2">
+            <article class="position-relative h-100 hover-lift">
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="Maize Cultivation">
+                <span class="post-date">12 Aug, 2026</span>
+              </div>
+              <div class="post-content d-flex flex-column">
+                <div class="meta d-flex align-items-center mb-2">
+                  <i class="bi bi-folder2 me-2" style="color: var(--accent-color);"></i>
+                  <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted);">Poultry Nutrition</span>
+                </div>
                 <h3 class="post-title">Maize Cultivation for Poultry Feeding</h3>
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
+                <p style="font-size: 15px; color: var(--muted); flex-grow: 1;">Learn how we integrate sustainable maize cultivation directly into our agricultural operations for optimal feed quality.</p>
+                <a href="blog-maize.html" class="readmore stretched-link"><span>Read Note</span><i class="bi bi-arrow-right"></i></a>
               </div>
-
             </article>
-          </div><!-- End post list item -->
+          </div>
 
-          <div class="col-lg-4">
-            <article class="position-relative h-100">
-
+          <!-- Post 3: Maggot Rearing -->
+          <div class="col-lg-4 col-md-6 reveal reveal-delay-3">
+            <article class="position-relative h-100 hover-lift">
               <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="Maggot Rearing">
+                <span class="post-date">12 Aug, 2026</span>
               </div>
-
-              <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>17</span>July, 2026</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Marketer</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Poultry Farming</span>
-                </div>
-              </div>
-
               <div class="post-content d-flex flex-column">
-                <h3 class="post-title">Grooming Maggots for Poultry Feeding</h3>
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <div class="meta d-flex align-items-center mb-2">
+                  <i class="bi bi-folder2 me-2" style="color: var(--accent-color);"></i>
+                  <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted);">Sustainable Farming</span>
+                </div>
+                <h3 class="post-title">Maggot Rearing for Poultry Feed</h3>
+                <p style="font-size: 15px; color: var(--muted); flex-grow: 1;">Discover our groundbreaking practice of rearing Black Soldier Fly larvae as a high-protein, sustainable feed supplement.</p>
+                <a href="blog-maggot.html" class="readmore stretched-link"><span>Read Note</span><i class="bi bi-arrow-right"></i></a>
               </div>
-
             </article>
-          </div><!-- End post list item -->
+          </div>
 
-          <div class="col-lg-4">
-            <article class="position-relative h-100">
-
+          <!-- Post 4: Feed Production -->
+          <div class="col-lg-4 col-md-6 reveal reveal-delay-1">
+            <article class="position-relative h-100 hover-lift">
               <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
+                <img src="assets/img/blog/blog-6.jpg" class="img-fluid" alt="Feed Production">
+                <span class="post-date">10 Aug, 2026</span>
               </div>
-              <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>17</span>July, 2026J</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Marketer</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Poultry Farming</span>
-                </div>
-              </div>
-
               <div class="post-content d-flex flex-column">
-                <h3 class="post-title">Cultivation and Sales of Poultry Manure</h3>
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <div class="meta d-flex align-items-center mb-2">
+                  <i class="bi bi-folder2 me-2" style="color: var(--accent-color);"></i>
+                  <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted);">Feed Production</span>
+                </div>
+                <h3 class="post-title">Feed Production & Management</h3>
+                <p style="font-size: 15px; color: var(--muted); flex-grow: 1;">Explore our in-house feed production system, from custom formulation to precise feeding schedules for optimal growth.</p>
+                <a href="blog-feed.html" class="readmore stretched-link"><span>Read Note</span><i class="bi bi-arrow-right"></i></a>
               </div>
-
             </article>
-          </div><!-- End post list item -->
+          </div>
 
-          <div class="col-lg-4">
-            <article class="position-relative h-100">
-
+          <!-- Post 5: Veterinary Care -->
+          <div class="col-lg-4 col-md-6 reveal reveal-delay-2">
+            <article class="position-relative h-100 hover-lift">
               <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-4.jpg" class="img-fluid" alt="">
+                <img src="assets/img/blog/blog-7.jpg" class="img-fluid" alt="Veterinary Care">
+                <span class="post-date">08 Aug, 2026</span>
               </div>
-              <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>00</span>Month, year</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Marketer</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Poultry Farming</span>
-                </div>
-              </div>
-
               <div class="post-content d-flex flex-column">
-                <h3 class="post-title">COMING SOON.</h3>
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <div class="meta d-flex align-items-center mb-2">
+                  <i class="bi bi-folder2 me-2" style="color: var(--accent-color);"></i>
+                  <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted);">Veterinary Care</span>
+                </div>
+                <h3 class="post-title">Veterinary Care & Biosecurity</h3>
+                <p style="font-size: 15px; color: var(--muted); flex-grow: 1;">Learn about our comprehensive veterinary care, biosecurity protocols, and disease prevention strategies.</p>
+                <a href="blog-vet.html" class="readmore stretched-link"><span>Read Note</span><i class="bi bi-arrow-right"></i></a>
               </div>
-
             </article>
-          </div><!-- End post list item -->
+          </div>
 
-          <div class="col-lg-4">
-            <article class="position-relative h-100">
-
+          <!-- Post 6: Organic Manure -->
+          <div class="col-lg-4 col-md-6 reveal reveal-delay-3">
+            <article class="position-relative h-100 hover-lift">
               <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-5.jpg" class="img-fluid" alt="">
+                <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="Organic Manure">
+                <span class="post-date">05 Aug, 2026</span>
               </div>
-
-              <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>00</span>Month, year</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Marketer</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Poultry Farming</span>
-                </div>
-              </div>
-
               <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">COMING SOON.</h3>
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
+                <div class="meta d-flex align-items-center mb-2">
+                  <i class="bi bi-folder2 me-2" style="color: var(--accent-color);"></i>
+                  <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted);">Waste Management</span>
+                </div>
+                <h3 class="post-title">Organic Manure Production</h3>
+                <p style="font-size: 15px; color: var(--muted); flex-grow: 1;">See how we turn poultry waste into nutrient-rich organic fertilizer, supporting local crop farmers and sustainable agriculture.</p>
+                <a href="blog-manure.html" class="readmore stretched-link"><span>Read Note</span><i class="bi bi-arrow-right"></i></a>
               </div>
-
             </article>
-          </div><!-- End post list item -->
+          </div>
 
-          <div class="col-lg-4">
-            <article class="position-relative h-100">
-
+          <!-- Post 7: Solar Power -->
+          <div class="col-lg-4 col-md-6 reveal reveal-delay-1">
+            <article class="position-relative h-100 hover-lift">
               <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/blog/blog-6.jpg" class="img-fluid" alt="">
+                <img src="assets/img/blog/blog-9.jpg" class="img-fluid" alt="Solar Power">
+                <span class="post-date">28 Jul, 2026</span>
               </div>
-
-              <div class="meta d-flex align-items-end">
-                <span class="post-date"><span>00</span>Month, year</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Marketer</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Poultry Farming</span>
-                </div>
-              </div>
-
               <div class="post-content d-flex flex-column">
-
-                <h3 class="post-title">COMING SOON.</h3>
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
+                <div class="meta d-flex align-items-center mb-2">
+                  <i class="bi bi-folder2 me-2" style="color: var(--accent-color);"></i>
+                  <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted);">Technology</span>
+                </div>
+                <h3 class="post-title">Solar Power & Tech Integration</h3>
+                <p style="font-size: 15px; color: var(--muted); flex-grow: 1;">Discover how we use solar power, IoT sensors, and automated systems to ensure reliability and sustainability.</p>
+                <a href="blog-techequipment.html" class="readmore stretched-link"><span>Read Note</span><i class="bi bi-arrow-right"></i></a>
               </div>
-
             </article>
-          </div><!-- End post list item -->
+          </div>
+
+          <!-- Post 8: QR Code Traceability -->
+          <div class="col-lg-4 col-md-6 reveal reveal-delay-2">
+            <article class="position-relative h-100 hover-lift">
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/blog/blog-8.jpg" class="img-fluid" alt="QR Code Traceability">
+                <span class="post-date">20 Jul, 2026</span>
+              </div>
+              <div class="post-content d-flex flex-column">
+                <div class="meta d-flex align-items-center mb-2">
+                  <i class="bi bi-folder2 me-2" style="color: var(--accent-color);"></i>
+                  <span style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted);">Food Safety</span>
+                </div>
+                <h3 class="post-title">QR Code Traceability</h3>
+                <p style="font-size: 15px; color: var(--muted); flex-grow: 1;">Learn how our pioneering QR code system builds unshakeable customer trust through complete transparency.</p>
+                <a href="blog-qr.html" class="readmore stretched-link"><span>Read Note</span><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
 
         </div>
       </div>
-
-    </section><!-- /Blog Posts 2 Section -->
+    </section>
 
     <!-- Blog Pagination Section -->
-    <section id="blog-pagination" class="blog-pagination section">
-
+    <section id="blog-pagination" class="blog-pagination section" style="padding-top: 0;">
       <div class="container">
         <div class="d-flex justify-content-center">
           <ul>
-            <li><a href="#"><i class="bi bi-chevron-left"></i></a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#" class="active">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li>...</li>
-            <li><a href="#">10</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i></a></li>
+            <li><a href="#" class="disabled"><i class="bi bi-chevron-left"></i></a></li>
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#" class="disabled"><i class="bi bi-chevron-right"></i></a></li>
           </ul>
         </div>
       </div>
-
-    </section><!-- /Blog Pagination Section -->
+    </section>
 
     <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section light-background">
-
+    <section id="call-to-action" class="call-to-action section light-background pattern-bg">
       <div class="content">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-lg-6">
-              <h3>Subscribe To Our Newsletter</h3>
+            <div class="col-lg-6 reveal-left">
+              <h3>Subscribe To Our Field Notes</h3>
               <p class="opacity-50">
-               Stay updated with our latest news and offers in our farm
+                Stay updated with our latest farming insights, practical tips, and special offers from Feathers and CO.
               </p>
             </div>
-            <div class="col-lg-6">
-              <form action="forms/newsletter.php" class="form-subscribe php-email-form">
+            <div class="col-lg-6 reveal-right">
+              <form id="newsletter-form" class="form-subscribe" action="https://formspree.io/f/mgawnprn" method="POST">
                 <div class="form-group d-flex align-items-stretch">
-                  <input type="email" name="email" class="form-control h-100" placeholder="Enter your e-mail">
-                  <input type="submit" class="btn btn-secondary px-4" value="Subcribe">
+                  <input type="email" name="email" class="form-control h-100" placeholder="Enter your e-mail" required>
+                  <input type="submit" class="btn btn-secondary px-4 magnetic-btn" value="Subscribe">
                 </div>
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
@@ -314,16 +309,15 @@
           </div>
         </div>
       </div>
-    </section><!-- /Call To Action Section -->
+    </section>
 
   </main>
 
   <footer id="footer" class="footer dark-background">
-
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about">
+          <div class="col-lg-4 col-md-6 footer-about reveal">
             <a href="index.html" class="logo d-flex align-items-center">
               <span class="sitename">Feathers and CO</span>
             </a>
@@ -332,82 +326,65 @@
               <p>Cameroon, Yaounde</p>
               <p class="mt-3"><strong>Phone:</strong> <span>+237 --- --- ---</span></p>
               <p><strong>Email:</strong> <span>service@feathersandco.com</span></p>
+              <p class="mt-3 fst-italic" style="color: var(--accent-color);">Built close to the soil.</p>
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-3 footer-links">
+          <div class="col-lg-2 col-md-3 footer-links reveal reveal-delay-1">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="blog.html">Field Notes</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-2 col-md-3 footer-links">
+          <div class="col-lg-2 col-md-3 footer-links reveal reveal-delay-2">
             <h4>Our Services</h4>
             <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Product Management</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Graphic Design</a></li>
+              <li><a href="services.html">Live & Processed Poultry</a></li>
+              <li><a href="services.html">Fresh Eggs</a></li>
+              <li><a href="services.html">Organic Manure</a></li>
+              <li><a href="services.html">Farmer Training</a></li>
+              <li><a href="services.html">Farm Consultancy</a></li>
             </ul>
           </div>
-           <!-- 
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Hic solutasetp</h4>
+          
+          <div class="col-lg-4 col-md-6 footer-links reveal reveal-delay-3">
+            <h4>Hours of Operation</h4>
             <ul>
-              <li><a href="#">Molestiae accusamus iure</a></li>
-              <li><a href="#">Excepturi dignissimos</a></li>
-              <li><a href="#">Suscipit distinctio</a></li>
-              <li><a href="#">Dilecta</a></li>
-              <li><a href="#">Sit quas consectetur</a></li>
+              <li>Monday — Saturday: 07:00 — 18:00</li>
+              <li>Sunday: Closed</li>
             </ul>
-          </div> -->
-            <!--
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Nobis illum</h4>
-            <ul>
-              <li><a href="#">Ipsam</a></li>
-              <li><a href="#">Laudantium dolorum</a></li>
-              <li><a href="#">Dinera</a></li>
-              <li><a href="#">Trodelas</a></li>
-              <li><a href="#">Flexo</a></li>
-            </ul>
+            <p class="mt-3" style="font-size: 13px; opacity: 0.7;">
+              We are always happy to answer your questions. Reach out to us via email or phone during business hours.
+            </p>
           </div>
-                  -->
         </div>
       </div>
     </div>
 
     <div class="copyright text-center">
       <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
-
         <div class="d-flex flex-column align-items-center align-items-lg-start">
           <div>
-            © Copyright <strong><span>MyWebsite</span></strong>. All Rights Reserved
+            © Copyright <strong><span>Feathers and CO</span></strong>. All Rights Reserved
           </div>
           <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information--null -->
-        
-            Designed by <a href="https://github.com/David10456">Nkene Boris Babila</a> Distributed by <a href="https://github.com/David10456">BAN</a>
+            Designed by <a href="https://github.com/David10456">Nkene Boris Babila</a> | Distributed by <a href="https://github.com/David10456">BAN</a>
           </div>
         </div>
-        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
-          <a href=""><i class="bi bi-twitter-x"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
-        </div>
 
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
@@ -425,7 +402,55 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  
+  <!-- Modern Interactions -->
+  <script src="assets/js/modern-interactions.js"></script>
+
+  <!-- Newsletter Form Handler -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById('newsletter-form');
+      if (form) {
+        form.addEventListener('submit', async function (event) {
+          event.preventDefault();
+          const loading = form.querySelector('.loading');
+          const errorMessage = form.querySelector('.error-message');
+          const sentMessage = form.querySelector('.sent-message');
+          const submitButton = form.querySelector('input[type="submit"]');
+
+          loading.style.display = 'block';
+          errorMessage.style.display = 'none';
+          sentMessage.style.display = 'none';
+          submitButton.disabled = true;
+
+          try {
+            const response = await fetch(form.action, {
+              method: 'POST',
+              body: new FormData(form),
+              headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+              loading.style.display = 'none';
+              sentMessage.style.display = 'block';
+              form.reset();
+            } else {
+              const data = await response.json();
+              loading.style.display = 'none';
+              errorMessage.innerHTML = data.errors ? data.errors.map(e => e.message).join(', ') : 'Oops! There was a problem submitting your form.';
+              errorMessage.style.display = 'block';
+            }
+          } catch (error) {
+            loading.style.display = 'none';
+            errorMessage.innerHTML = 'Oops! There was a problem submitting your form. Please check your internet connection.';
+            errorMessage.style.display = 'block';
+          } finally {
+            submitButton.disabled = false;
+          }
+        });
+      }
+    });
+  </script>
 
 </body>
-
 </html>
