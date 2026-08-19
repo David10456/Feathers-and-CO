@@ -71,14 +71,14 @@
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
       <div class="container position-relative">
-        <span class="eyebrow" style="color: var(--contrast-color); opacity: 0.8;">Field Note / Feed Production</span>
-        <h1 style="color: var(--contrast-color);">The Science Behind Healthy, Productive Poultry</h1>
+        <span class="eyebrow" style="color: #F4EFE4; opacity: 0.8;">Field Note / Feed Production</span>
+        <h1 style="color: #F4EFE4;">The Science Behind Healthy, Productive Poultry</h1>
         <p style="color: rgba(244, 239, 228, 0.8); max-width: 600px; margin: 0 auto;">A detailed documentation of our in-house feed formulation, production process, and precise feeding schedules.</p>
         <nav class="breadcrumbs" style="margin-top: 2rem;">
           <ol>
-            <li><a href="index.html" style="color: var(--contrast-color);">Home</a></li>
-            <li><a href="blog.html" style="color: var(--contrast-color);">Stories</a></li>
-            <li class="current" style="color: var(--accent-color);">Feed Production & Management</li>
+            <li><a href="index.html" style="color: #F4EFE4;">Home</a></li>
+            <li><a href="blog.html" style="color: #F4EFE4;">Stories</a></li>
+            <li class="current" style="color: #D4A574;">Feed Production & Management</li>
           </ol>
         </nav>
       </div>
@@ -89,8 +89,8 @@
 
         <div class="col-lg-8">
 
-          <!-- Blog Details Section -->
-          <section id="blog-details" class="blog-details section reveal">
+          <!-- Blog Details Section (reveal class removed) -->
+          <section id="blog-details" class="blog-details section">
             <div class="container p-0">
 
               <article class="article">
@@ -141,7 +141,8 @@
                     <li><strong>Toxin Binder (0.1-0.2%):</strong> Added as a safety measure to neutralize any residual mycotoxins that may be present in grain ingredients.</li>
                   </ul>
 
-                  <div class="my-5 reveal">
+                  <!-- reveal class removed -->
+                  <div class="my-5">
                     <img src="assets/img/blog/blog-13.jpg" class="img-fluid" alt="Feed Ingredients and Mixing Process at Feathers and CO" style="border-radius: 4px;">
                   </div>
 
@@ -185,7 +186,8 @@
                     <li><strong>Step 8 - Storage:</strong> Finished feed is stored in sealed, elevated bins in our climate-controlled feed room to prevent moisture absorption, pest infestation, and nutrient degradation.</li>
                   </ul>
 
-                  <div class="my-5 reveal">
+                  <!-- reveal class removed -->
+                  <div class="my-5">
                     <img src="assets/img/blog/blog-13.jpg" class="img-fluid" alt="Feed Storage Bins and Quality Testing at Feathers and CO" style="border-radius: 4px;">
                   </div>
 
@@ -243,10 +245,10 @@
             </div>
           </section><!-- /Blog Details Section -->
 
-          <!-- Blog Comments Section -->
-          <section id="blog-comments" class="blog-comments section reveal">
+          <!-- Blog Comments Section (reveal class removed) -->
+          <section id="blog-comments" class="blog-comments section">
             <div class="container p-0">
-              <h4 class="comments-count" style="font-family: var(--heading-font); margin-bottom: 2rem;">3 Comments</h4>
+              <h4 class="comments-count" style="font-family: 'Marcellus', serif; margin-bottom: 2rem; color: #1B3023;">3 Comments</h4>
 
               <div id="comment-1" class="comment">
                 <div class="d-flex">
@@ -328,66 +330,66 @@
 
             </div>
           </section><!-- /Blog Comments Section -->
-<!-- Blog Comments Form Section -->
-<section id="comment-form" class="comment-form section reveal">
-  <div class="container p-0">
-    <div class="form-header mb-4">
-      <h4 style="font-family: var(--heading-font); font-size: 28px; margin-bottom: 0.5rem;">Join the Conversation</h4>
-      <p style="color: var(--muted); font-size: 15px;">Your email address will not be published. Required fields are marked *</p>
-    </div>
-    
-    <!-- IMPORTANT: Replace YOUR_FORMSPREE_COMMENT_ID with your actual Formspree endpoint for comments -->
-    <form id="blog-comment-form" action="https://formspree.io/f/mzepkpze" method="POST" role="form" class="php-email-form">
-      <div class="row gy-4">
-        <div class="col-md-6 form-group">
-          <label for="comment-name" class="form-label" style="font-size: 13px; font-weight: 600; color: var(--heading-color);">Your Name *</label>
-          <input name="name" type="text" id="comment-name" class="form-control" placeholder="Fritz Brain" required>
-        </div>
-        <div class="col-md-6 form-group">
-          <label for="comment-email" class="form-label" style="font-size: 13px; font-weight: 600; color: var(--heading-color);">Your Email *</label>
-          <input name="email" type="email" id="comment-email" class="form-control" placeholder="fritz@example.com" required>
-        </div>
-        <div class="col-12 form-group">
-          <label for="comment-website" class="form-label" style="font-size: 13px; font-weight: 600; color: var(--heading-color);">Website (Optional)</label>
-          <input name="website" type="url" id="comment-website" class="form-control" placeholder="https://yourwebsite.com">
-        </div>
-        <div class="col-12 form-group">
-          <label for="comment-message" class="form-label" style="font-size: 13px; font-weight: 600; color: var(--heading-color);">Your Comment *</label>
-          <textarea name="message" id="comment-message" class="form-control" rows="6" placeholder="Share your thoughts on this article..." required></textarea>
-        </div>
-        
-        <!-- Hidden field to tell you which blog post the comment is for -->
-        <input type="hidden" name="blog_post" value="Current Blog Post Title">
 
-        <div class="col-12">
-          <div class="loading" style="display: none; text-align: center; padding: 10px;">Processing your comment...</div>
-          <div class="error-message" style="display: none; color: #df1529; background: rgba(223, 21, 41, 0.1); padding: 12px; border-radius: 4px; margin-bottom: 15px;"></div>
-          <div class="sent-message" style="display: none; color: #059652; background: rgba(5, 150, 82, 0.1); padding: 12px; border-radius: 4px; margin-bottom: 15px;">
-            <i class="bi bi-check-circle-fill me-2"></i> Thank you! Your comment has been submitted for review.
-          </div>
-          
-          <div class="text-center text-md-start mt-2">
-            <button type="submit" class="btn-cta magnetic-btn" style="padding: 12px 32px;">
-              Post Comment <i class="bi bi-send ms-2"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
-</section><!-- End Comment Form Section -->
+          <!-- Blog Comments Form Section (reveal class removed) -->
+          <section id="comment-form" class="comment-form section">
+            <div class="container p-0">
+              <div class="form-header mb-4">
+                <h4 style="font-family: 'Marcellus', serif; font-size: 28px; margin-bottom: 0.5rem; color: #1B3023;">Join the Conversation</h4>
+                <p style="color: #6B7280; font-size: 15px;">Your email address will not be published. Required fields are marked *</p>
+              </div>
+              
+              <form id="blog-comment-form" action="https://formspree.io/f/mzepkpze" method="POST" role="form" class="php-email-form">
+                <div class="row gy-4">
+                  <div class="col-md-6 form-group">
+                    <label for="comment-name" class="form-label" style="font-size: 13px; font-weight: 600; color: #1B3023;">Your Name *</label>
+                    <input name="name" type="text" id="comment-name" class="form-control" placeholder="Fritz Brain" required>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label for="comment-email" class="form-label" style="font-size: 13px; font-weight: 600; color: #1B3023;">Your Email *</label>
+                    <input name="email" type="email" id="comment-email" class="form-control" placeholder="fritz@example.com" required>
+                  </div>
+                  <div class="col-12 form-group">
+                    <label for="comment-website" class="form-label" style="font-size: 13px; font-weight: 600; color: #1B3023;">Website (Optional)</label>
+                    <input name="website" type="url" id="comment-website" class="form-control" placeholder="https://yourwebsite.com">
+                  </div>
+                  <div class="col-12 form-group">
+                    <label for="comment-message" class="form-label" style="font-size: 13px; font-weight: 600; color: #1B3023;">Your Comment *</label>
+                    <textarea name="message" id="comment-message" class="form-control" rows="6" placeholder="Share your thoughts on this article..." required></textarea>
+                  </div>
+                  
+                  <!-- Updated hidden field to reflect the actual blog post title -->
+                  <input type="hidden" name="blog_post" value="Feed Production & Management">
+
+                  <div class="col-12">
+                    <div class="loading" style="display: none; text-align: center; padding: 10px;">Processing your comment...</div>
+                    <div class="error-message" style="display: none; color: #df1529; background: rgba(223, 21, 41, 0.1); padding: 12px; border-radius: 4px; margin-bottom: 15px;"></div>
+                    <div class="sent-message" style="display: none; color: #059652; background: rgba(5, 150, 82, 0.1); padding: 12px; border-radius: 4px; margin-bottom: 15px;">
+                      <i class="bi bi-check-circle-fill me-2"></i> Thank you! Your comment has been submitted for review.
+                    </div>
+                    
+                    <div class="text-center text-md-start mt-2">
+                      <button type="submit" class="btn-cta magnetic-btn" style="padding: 12px 32px;">
+                        Post Comment <i class="bi bi-send ms-2"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section><!-- End Comment Form Section -->
 
         </div>
 
         <div class="col-lg-4">
 
-          <!-- Blog Sidebar Section -->
+          <!-- Blog Sidebar Section (all reveal classes removed) -->
           <section id="blog-sidebar" class="blog-sidebar section">
             <div class="container p-0">
 
               <!-- Search Widget -->
-              <div class="search-widget reveal">
-                <h3 style="font-family: var(--heading-font);">Search</h3>
+              <div class="search-widget">
+                <h3 style="font-family: 'Marcellus', serif; color: #1B3023;">Search</h3>
                 <form action="" method="post" role="form">
                   <input type="text" name="q" placeholder="Search the notes...">
                   <button type="submit"><i class="bi bi-search"></i></button>
@@ -395,8 +397,8 @@
               </div><!-- End Search Widget -->
 
               <!-- Categories Widget -->
-              <div class="categories-widget widget-item reveal">
-                <h3 class="widget-title" style="font-family: var(--heading-font);">Categories</h3>
+              <div class="categories-widget widget-item">
+                <h3 class="widget-title" style="font-family: 'Marcellus', serif; color: #1B3023;">Categories</h3>
                 <ul class="mt-3">
                   <li><a href="#">Sustainable Farming <span>(5)</span></a></li>
                   <li><a href="#">Poultry Nutrition <span>(4)</span></a></li>
@@ -410,8 +412,8 @@
               </div><!-- End Categories Widget -->
 
               <!-- Recent Posts Widget -->
-              <div class="recent-posts-widget widget-item reveal">
-                <h3 class="widget-title" style="font-family: var(--heading-font);">Recent Notes</h3>
+              <div class="recent-posts-widget widget-item">
+                <h3 class="widget-title" style="font-family: 'Marcellus', serif; color: #1B3023;">Recent Notes</h3>
 
                 <div class="post-item hover-lift">
                   <img src="assets/img/blog/blog-6.jpg" alt="" class="flex-shrink-0">
@@ -456,8 +458,8 @@
               </div><!-- End Recent Posts Widget -->
 
               <!-- Tags Widget -->
-              <div class="tags-widget widget-item reveal">
-                <h3 class="widget-title" style="font-family: var(--heading-font);">Tags</h3>
+              <div class="tags-widget widget-item">
+                <h3 class="widget-title" style="font-family: 'Marcellus', serif; color: #1B3023;">Tags</h3>
                 <ul>
                   <li><a href="#">Poultry</a></li>
                   <li><a href="#">Sustainable</a></li>
@@ -483,12 +485,12 @@
     </div>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer (all reveal classes removed) -->
   <footer id="footer" class="footer dark-background">
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 footer-about reveal">
+          <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
               <span class="sitename">Feathers and CO</span>
             </a>
@@ -497,11 +499,11 @@
               <p>Cameroon, Yaounde</p>
               <p class="mt-3"><strong>Phone:</strong> <span>+237 672 575 749</span></p>
               <p><strong>Email:</strong> <span>service@feathersandco.com</span></p>
-              <p class="mt-3 fst-italic" style="color: var(--accent-color);">Built close to the soil.</p>
+              <p class="mt-3 fst-italic" style="color: #D4A574;">Built close to the soil.</p>
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-3 footer-links reveal reveal-delay-1">
+          <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><a href="index.html">Home</a></li>
@@ -512,7 +514,7 @@
             </ul>
           </div>
 
-          <div class="col-lg-2 col-md-3 footer-links reveal reveal-delay-2">
+          <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
               <li><a href="services.html">Live & Processed Poultry</a></li>
@@ -523,7 +525,7 @@
             </ul>
           </div>
           
-          <div class="col-lg-4 col-md-6 footer-links reveal reveal-delay-3">
+          <div class="col-lg-4 col-md-6 footer-links">
             <h4>Hours of Operation</h4>
             <ul>
               <li>Monday — Saturday: 07:00 — 18:00</li>
@@ -577,69 +579,62 @@
   <!-- Modern Interactions -->
   <script src="assets/js/modern-interactions.js"></script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const commentForm = document.getElementById('blog-comment-form');
-    
-    if (commentForm) {
-      commentForm.addEventListener('submit', async function (event) {
-        event.preventDefault(); // Stop the page from reloading or redirecting
+  <!-- Blog Comment Form Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const commentForm = document.getElementById('blog-comment-form');
+      
+      if (commentForm) {
+        commentForm.addEventListener('submit', async function (event) {
+          event.preventDefault();
 
-        const loading = commentForm.querySelector('.loading');
-        const errorMessage = commentForm.querySelector('.error-message');
-        const sentMessage = commentForm.querySelector('.sent-message');
-        const submitButton = commentForm.querySelector('button[type="submit"]');
-        const originalButtonText = submitButton.innerHTML;
+          const loading = commentForm.querySelector('.loading');
+          const errorMessage = commentForm.querySelector('.error-message');
+          const sentMessage = commentForm.querySelector('.sent-message');
+          const submitButton = commentForm.querySelector('button[type="submit"]');
+          const originalButtonText = submitButton.innerHTML;
 
-        // 1. Show loading state
-        loading.style.display = 'block';
-        errorMessage.style.display = 'none';
-        sentMessage.style.display = 'none';
-        submitButton.disabled = true;
-        submitButton.innerHTML = 'Posting... <i class="bi bi-hourglass-split ms-2"></i>';
+          loading.style.display = 'block';
+          errorMessage.style.display = 'none';
+          sentMessage.style.display = 'none';
+          submitButton.disabled = true;
+          submitButton.innerHTML = 'Posting... <i class="bi bi-hourglass-split ms-2"></i>';
 
-        try {
-          // 2. Send the data to Formspree
-          const response = await fetch(commentForm.action, {
-            method: 'POST',
-            body: new FormData(commentForm),
-            headers: { 
-              'Accept': 'application/json' // This tells Formspree to reply with JSON, not a redirect
+          try {
+            const response = await fetch(commentForm.action, {
+              method: 'POST',
+              body: new FormData(commentForm),
+              headers: { 
+                'Accept': 'application/json'
+              }
+            });
+
+            if (response.ok) {
+              loading.style.display = 'none';
+              sentMessage.style.display = 'block';
+              commentForm.reset();
+              submitButton.innerHTML = originalButtonText;
+            } else {
+              const data = await response.json();
+              loading.style.display = 'none';
+              errorMessage.innerHTML = data.errors 
+                ? data.errors.map(e => e.message).join(', ') 
+                : 'Oops! There was a problem posting your comment.';
+              errorMessage.style.display = 'block';
+              submitButton.innerHTML = originalButtonText;
             }
-          });
-
-          // 3. Handle Formspree's response
-          if (response.ok) {
-            // SUCCESS! Formspree returns {"ok": true, "next": "/thanks..."}
-            // We ignore the "next" redirect and just show our success message.
+          } catch (error) {
             loading.style.display = 'none';
-            sentMessage.style.display = 'block';
-            commentForm.reset(); // Clear the form fields
-            submitButton.innerHTML = originalButtonText;
-          } else {
-            // Formspree rejected it (e.g., invalid email format)
-            const data = await response.json();
-            loading.style.display = 'none';
-            errorMessage.innerHTML = data.errors 
-              ? data.errors.map(e => e.message).join(', ') 
-              : 'Oops! There was a problem posting your comment.';
+            errorMessage.innerHTML = 'Network error. Please check your internet connection and try again.';
             errorMessage.style.display = 'block';
             submitButton.innerHTML = originalButtonText;
+          } finally {
+            submitButton.disabled = false;
           }
-        } catch (error) {
-          // Network error (e.g., offline)
-          loading.style.display = 'none';
-          errorMessage.innerHTML = 'Network error. Please check your internet connection and try again.';
-          errorMessage.style.display = 'block';
-          submitButton.innerHTML = originalButtonText;
-        } finally {
-          // Always re-enable the button
-          submitButton.disabled = false;
-        }
-      });
-    }
-  });
-</script>
+        });
+      }
+    });
+  </script>
 
 </body>
 </html>
